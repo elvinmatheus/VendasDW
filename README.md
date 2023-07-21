@@ -6,7 +6,7 @@ Este documento descreve o projeto de construção de um Data Warehouse On-Premis
 
 ## Arquitetura do projeto
 
-!(Arquitetura do DW)[https://github.com/elvinmatheus/VendasDW/blob/main/images/Arquitetura.png]
+![Arquitetura do DW](https://github.com/elvinmatheus/VendasDW/blob/main/images/Arquitetura.png)
 
 1. **Extração dos dados:** Nesta etapa, os dados foram extraídos do banco de dados operacional da empresa fictícia. O método de extração escolhido foi a extração incremental, em que obtemos os dados diretamente da fonte.
 
@@ -20,7 +20,7 @@ Este documento descreve o projeto de construção de um Data Warehouse On-Premis
 
 1. **Modelagem Dimensional:** Após as etapas de modelagem de negócio e modelagem lógica inerentes ao processo de construção de um Data Warehouse, elaboramos um diagrama que representa a modelagem dimensional do DW a ser implementado.
 
-!(Modelagem Dimensional)[https://github.com/elvinmatheus/VendasDW/blob/main/images/Modelagem%20Dimensional.png]
+![Modelagem Dimensional](https://github.com/elvinmatheus/VendasDW/blob/main/images/Modelagem%20Dimensional.png)
 
 2. **Criação dos Schemas:** Execute o script `1.config.sql` no Oracle DB para a criação dos schemas SOURCE, STAREA e DW.
 
