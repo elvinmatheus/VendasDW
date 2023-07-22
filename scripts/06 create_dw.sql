@@ -13,7 +13,7 @@ CREATE TABLE tb_dim_cliente (
     nk_id_cliente       VARCHAR2(20) NOT NULL,
     nm_cliente          VARCHAR2(50) NOT NULL,
     nm_cidade_cliente   VARCHAR2(50) NOT NULL,
-    flag_aceita_alertas CHAR(1) NOT NULL,
+    flag_aceita_alertas CHAR(1)      NOT NULL,
     desc_cep            VARCHAR2(10) NOT NULL,
     CONSTRAINT tb_dim_cliente_pk PRIMARY KEY (sk_cliente) ENABLE
 );
@@ -38,18 +38,18 @@ CREATE TABLE tb_dim_loja (
 );
 
 CREATE TABLE tb_dim_tempo (
-    sk_data         INTEGER NOT NULL,
-    data            DATE NOT NULL,
-    nr_ano          NUMBER(4) NOT NULL,
+    sk_data         INTEGER         NOT NULL,
+    data            DATE            NOT NULL,
+    nr_ano          NUMBER(4)       NOT NULL,
     nm_trimestre    VARCHAR2(11),
-    nr_mes          NUMBER(2) NOT NULL,
-    nm_mes          VARCHAR2(15) NOT NULL,
-    nr_semana       NUMBER(2) NOT NULL,
-    nm_ano_semana   VARCHAR2(10) NOT NULL,
-    nr_dia          NUMBER(2) NOT NULL,
-    nm_dia_semana   VARCHAR2(15) NOT NULL,
-    flag_feriado    CHAR(3) NOT NULL,
-    nm_feriado      VARCHAR2(50) NOT NULL,
+    nr_mes          NUMBER(2)       NOT NULL,
+    nm_mes          VARCHAR2(15)    NOT NULL,
+    nr_semana       NUMBER(2)       NOT NULL,
+    nm_ano_semana   VARCHAR2(10)    NOT NULL,
+    nr_dia          NUMBER(2)       NOT NULL,
+    nm_dia_semana   VARCHAR2(15)    NOT NULL,
+    flag_feriado    CHAR(3)         NOT NULL,
+    nm_feriado      VARCHAR2(50)    NOT NULL,
     CONSTRAINT tb_dim_tempo_pk PRIMARY KEY (sk_data) ENABLE
 );
 
